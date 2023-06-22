@@ -1,0 +1,10 @@
+<ng-container *ngIf="!loadingCompleted; else loadComplete">
+  <cwc-loader size="medium">
+    <span *ngIf="loadingCompleted" slot="loading">{{"views.app.loading.loadingMessage" | translate}}</span>
+    <span *ngIf="loadingCompleted"  slot="delay">{{ "views.app.loading.delayMessage" | translate }}</span>
+    <span *ngIf="loadingCompleted"  slot="error">{{ "views.app.loading.errorMessage" | translate }}</span>
+  </cwc-loader>
+</ng-container>
+<ng-template #loadComplete>
+  <router-outlet></router-outlet>
+</ng-template>

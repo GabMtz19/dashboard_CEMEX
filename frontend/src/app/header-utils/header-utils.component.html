@@ -1,0 +1,21 @@
+<div class="header-utils">
+
+  <!-- won't use notificatons yet -->
+  <!-- <div class="menu-notification">
+    <a href="#">
+      <span class="menu-notification-label">Notifications</span>
+      <span class="menu-notification-bubble"></span>
+      <cwc-icon name="notification" size="1.4rem" color="true-blue" slot="target" class="menu-icon"></cwc-icon>
+    </a>
+  </div> -->
+
+  <!-- user signout overlay -->
+  <cwc-overlay class="menu-text-button" aria-label="display label" direction="sw" variant="popover" [attr.show]="helpOverlayVisible" width="220px" height="64px">
+    <span class="menu-item" slot="target">BV</span>
+    <div slot="content" class="menu-overlay">
+      <!--cwc-button variant="link" color="white" slot="traget" (cwcClick)="goToPage('userInfo')">User Info</cwc-button><br /-->
+      <cwc-button variant="link" color="white" slot="traget" (cwcClick)="logout()">Sign out</cwc-button><br />
+    </div>
+  </cwc-overlay>
+
+</div>

@@ -1,0 +1,30 @@
+<cwc-page>
+    <cwc-header show-menu-button="true" slot="header">
+        <app-header-utils></app-header-utils>
+    </cwc-header>
+    <cwc-sidenav slot="sidenav" style="z-index: 10">
+        <!-- cwc-entity-selector slot="legal-entity-selection" (cwcEntitySelected)="activateLegalEntity($event)">
+            <cwc-entity-selector-item [entityName]="legalEntity.legalEntityDesc" [entityId]="legalEntity.legalEntityId"
+            [active]="isActiveLegalEntity(legalEntity.legalEntityId)" *ngFor="let legalEntity of updatedLegalEntities">
+            </cwc-entity-selector-item>
+        </cwc-entity-selector -->
+        <cwc-sidenav-menu id="menuNav" slot="menu-items">
+            <app-nav></app-nav>
+        </cwc-sidenav-menu>
+        <cwc-footer-menu slot="links">
+            <cwc-footer-menu-item label="{{'legal' | translate}}" href="https://www.cemex.com/legal" target="_blank"></cwc-footer-menu-item>
+            <cwc-footer-menu-item label="{{'privacy' | translate}}" onclick="window.alert('Triggered by a javascript function')"></cwc-footer-menu-item>
+            <cwc-footer-menu-item label="cemex.com" href="https://www.cemex.com" target="_blank"></cwc-footer-menu-item>
+        </cwc-footer-menu>
+        <div slot="copyright">
+            © 2017-2019 CEMEX<br />
+            International Holding AG.<br />
+            All rights reserved.
+        </div>
+    </cwc-sidenav>
+    <div slot="main" style="height:100%">
+        <cwc-alert *ngIf="alertInfo" [variant]="alertInfo.variant" [message]="alertInfo.message" [ctaMessage]="alertInfo.ctaMessage"></cwc-alert>
+        <router-outlet></router-outlet>
+    </div>
+</cwc-page>
+      

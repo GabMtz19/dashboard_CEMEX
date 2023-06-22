@@ -1,0 +1,26 @@
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.login-logo-wrap {
+    background: #002A59;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+}
+
+.login-logo {
+    margin: auto;
+}
+
+.login-form {
+    width: 60%;
+    align-self: center;
+}
+
+.bar-highlight {
+    height: 2px;
+    width: 100%;
+    background-color: #EE3D42;
+}

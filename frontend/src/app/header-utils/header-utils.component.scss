@@ -1,0 +1,111 @@
+@import '../../scss/variables/colors';
+
+.header-utils {
+  display: flex;
+  margin-top: 4px;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-notification {
+  position: relative;
+  
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.menu-notification-label {
+  color: $true-white;
+  text-decoration: none;
+
+}
+
+.menu-notification-bubble {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  z-index: 100;
+}
+
+.menu-overlay {
+  color: $true-black;
+  padding: 1rem;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  color: #202020;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.menu-item-round {
+  width: 32px;
+  height: 32px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  line-height: 2rem;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.menu-text-button {
+  align-self: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.menu-support-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dadada;
+  display: inline-block;
+  width: 100%;
+  line-height: 1rem;
+  text-decoration: none;
+  color: $deep-blue;
+}
+
+.menu-issues-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $deep-blue;
+  line-height: 1rem;
+}
+
+.menu-issues-number {
+  font-size: 0.75rem;
+  color: $medium-grey;
+}
+
+.menu-item {
+  font-weight: bold;
+  color: #003876;
+  background: white;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+

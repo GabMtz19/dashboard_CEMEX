@@ -1,0 +1,38 @@
+<div class="login-wrapper">
+    <div class="login-logo-wrap">
+        <div class="login-logo">
+            <img src="./assets/images/cemex_mono_white.svg" alt="cemex logo" width="146">    
+        </div>
+    </div>
+
+    <div class="login-form">
+        <div class="container">
+            <h2 class="welcome-text-title">{{'views.login.welcome' | translate}}</h2>
+            <div class="welcome-detail-line"></div>
+            <cwc-login id="mainLogin" class="cmx-login-form" (cwcLogin)="mylogin($event)"
+                labelUsername="{{'views.login.username' | translate}}"
+                labelUsernamePlaceholder="{{'views.login.username' | translate}}"
+                labelPassword="{{'views.login.password' | translate}}"
+                labelPasswordPlaceholder="{{'views.login.password' | translate}}"
+                labelLoginCTA="{{'views.login.loginButton' | translate}}" labelLoginError="{{'views.login.error' | translate}}"
+                logInButtonWidth="{{ '-webkit-fill-available' }}">
+                <!-- ajax headers -->
+                <cwc-login-param type="header" name="accept-language" value="es_MX"></cwc-login-param>
+                <cwc-login-param type="header" name="app-code" value="DCMWebTool_App"></cwc-login-param>
+                <cwc-login-param type="header" name="Content-Type" value="application/x-www-form-urlencoded"></cwc-login-param>
+                <cwc-login-param type="header" name="x-ibm-client-id" value="ba4ae518-258b-4b29-9d6f-8d77ab1cef7a">
+                </cwc-login-param>
+                <!-- body values -->
+                <cwc-login-param type="body" name="grant_type" value="password"></cwc-login-param>
+                <cwc-login-param type="body" name="scope" value="security"></cwc-login-param>
+                <cwc-login-param type="body" name="client_id" value="ba4ae518-258b-4b29-9d6f-8d77ab1cef7a"></cwc-login-param>
+                <cwc-login-param type="body" name="app_name" value="DCM"></cwc-login-param>
+                <div slot="ctas">
+                    <cwc-button variant="link" (cwcClick)="forgot()">{{'views.login.forgotPassword' | translate}}</cwc-button>
+                </div>
+            </cwc-login>
+            <!-- end .row -->
+        </div>
+        <!-- end .container -->
+    </div>
+</div>

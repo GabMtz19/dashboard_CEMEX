@@ -1,0 +1,15 @@
+.loading-container {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.4);
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+
+    div{
+      padding: 20px;
+    }
+}
