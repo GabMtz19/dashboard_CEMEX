@@ -9,11 +9,18 @@ In case of an error while executing "npm install", use this command and repeat t
 npm install --save --legacy-peer-deps
 
 Example:
-D:\folder_domain> cd .\frontend\
-D:\folder_domain\frontend> npm install
-D:\folder_domain\frontend> npm start
+
+  D:\folder_domain> cd .\frontend\
+  
+  D:\folder_domain\frontend> npm install
+  
+  D:\folder_domain\frontend> npm start
+
 
 *Open new terminal
-D:\folder_domain> cd .\backend\
-D:\folder_domain\backend> npm install
-D:\folder_domain\backend> npm start
+
+  D:\folder_domain> cd .\backend\
+  
+  D:\folder_domain\backend> npm install
+  
+  D:\folder_domain\backend> npm start
