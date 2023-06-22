@@ -1,0 +1,60 @@
+<div class="main">
+  <h1>User Information</h1>
+  <hr>
+  <div class="main-body">
+        <!-- /Breadcrumb -->
+  
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <!--div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div-->
+	                <div><img [src]="url" *ngIf="url" alt="Admin" class="rounded-circle" width="120"></div>
+                  <div class="mt-3">
+                    <h4>User: {{userP.lastName}}</h4>
+                    <p class="text-secondary mb-1">{{userP.userPosition}}</p>
+                    <p class="text-muted font-size-sm">{{intl.formatDisplayName(countryCode, {type: 'region'})}}</p>
+                    <!--<input type="file" (change)="selectFile($event)" id="files" class="hidden"/>
+                    <label for="files" class="btn">Select Image</label>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Full Name</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary" style="margin-top: 50px;">
+                    {{userP.fullName}}
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary" style="margin-top: 50px;">
+                    {{userP.userAccount}}
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Phone</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary" style="margin-top: 50px;">
+                    {{userP.phoneNumber}}
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
