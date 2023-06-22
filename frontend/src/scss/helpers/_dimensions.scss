@@ -1,0 +1,229 @@
+// height helpers
+.height {
+    &-full {
+        height: 100% !important;
+    }
+    &-half{
+        height: 50% !important;
+    }
+    &-third{
+        height: 33.3% !important;
+    }
+    &-mobile{
+        height: 568px !important;
+    }
+    &-px{
+        &-450{
+            height: 450px !important;
+        }
+    }
+}
+
+// width helpers
+.width {
+    &-full {
+        width: 100% !important;
+    }
+    &-half{
+        width: 50% !important;
+    }
+    &-third{
+        width: 33.3% !important;
+    }
+    &-mobile{
+        width:320px !important;
+    }
+    &-px{
+        &-20{
+            width: 20px !important;
+        }
+        &-40{
+            width: 40px !important;
+        }
+        &-60{
+            width: 60px !important;
+        }
+        &-80{
+            width: 80px !important;
+        }
+        &-100{
+            width: 100px !important;
+        }
+        &-120{
+            width: 120px !important;
+        }
+        &-140{
+            width: 140px !important;
+        }
+        &-160{
+            width: 160px !important;
+        }
+        &-180{
+            width: 180px !important;
+        }
+        &-200{
+            width: 200px !important;
+        }
+        &-240{
+            width: 240px !important;
+        }
+        &-280{
+            width: 280px !important;
+        }
+        &-320{
+            width: 320px !important;
+        }
+        &-360{
+            width: 360px !important;
+        }
+        &-400{
+            width: 400px !important;
+        }
+    }
+}
+
+// scale helpers
+
+.scale{
+    &-25{
+        transform:scale(0.25) !important;
+    }
+    &-50{
+        transform:scale(0.5) !important;
+    }
+    &-75{
+        transform:scale(0.75) !important;
+    }
+}
+
+.min{
+    &-width {
+        &-full {
+            min-width: 100% !important;
+        }
+        &-half{
+            min-width: 50% !important;
+        }
+        &-third{
+            min-width: 33.3% !important;
+        }
+        &-mobile{
+            min-width:320px !important;
+        }
+        &-px{
+            &-20{
+                min-width: 20px !important;
+            }
+            &-40{
+                min-width: 40px !important;
+            }
+            &-60{
+                min-width: 60px !important;
+            }
+            &-80{
+                min-width: 80px !important;
+            }
+            &-100{
+                min-width: 100px !important;
+            }
+            &-120{
+                min-width: 120px !important;
+            }
+            &-140{
+                min-width: 140px !important;
+            }
+            &-160{
+                min-width: 160px !important;
+            }
+            &-180{
+                min-width: 180px !important;
+            }
+            &-200{
+                min-width: 200px !important;
+            }
+            &-240{
+                min-width: 240px !important;
+            }
+            &-280{
+                min-width: 280px !important;
+            }
+            &-320{
+                min-width: 320px !important;
+            }
+            &-360{
+                min-width: 360px !important;
+            }
+            &-400{
+                min-width: 400px !important;
+            }
+        }
+    }
+}
+.max{
+    &-width {
+        &-full {
+            max-width: 100% !important;
+        }
+        &-half{
+            max-width: 50% !important;
+        }
+        &-third{
+            max-width: 33.3% !important;
+        }
+        &-mobile{
+            max-width:320px !important;
+        }
+    }
+
+    &-height {
+        &-full {
+            max-height: 100% !important;
+        }
+        &-half{
+            max-height: 50% !important;
+        }
+        &-third{
+            max-height: 33.3% !important;
+        }
+        &-mobile{
+            max-height: 568px !important;
+        }
+    }
+}
+
+@media (min-width: $responsive-breakpoint-as-min) {
+    .width{
+        &-desktop{
+            &-full {
+                width: 100% !important;
+            }
+            &-half{
+                width: 50% !important;
+            }
+            &-third{
+                width: 33.3% !important;
+            }
+            &-mobile{
+                width:320px !important;
+            }
+        }
+    }
+}
+@media (max-width: $responsive-breakpoint-as-max) {
+    .width{
+        &-mobile{
+            &-full {
+                width: 100% !important;
+            }
+            &-half{
+                width: 50% !important;
+            }
+            &-third{
+                width: 33.3% !important;
+            }
+            &-mobile{
+                width:320px !important;
+            }
+        }
+    }
+}

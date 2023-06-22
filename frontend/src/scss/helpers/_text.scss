@@ -1,0 +1,368 @@
+//nowrap
+.nowrap {
+    white-space: nowrap;
+}
+
+// FONT SIZE HELPERS
+
+.font-size-{
+    &10{
+        font-size: $font-size-10;
+    }
+    &12{
+        font-size: $font-size-12;
+    }
+    &14{
+        font-size: $font-size-14;
+    }
+    &16{
+        font-size: $font-size-16;
+    }
+    &18{
+        font-size: $font-size-18;
+    }
+    &20{
+        font-size: $font-size-20;
+    }
+    &22{
+        font-size: $font-size-22;
+    }
+    &24{
+        font-size: $font-size-24;
+    }
+    &26{
+        font-size: $font-size-26;
+    }
+    &30{
+        font-size: $font-size-30;
+    }
+    &32{
+        font-size: $font-size-32;
+    }
+    &48{
+        font-size: $font-size-48;
+    }
+    &56{
+        font-size: $font-size-56;
+    }
+}
+
+.line-height-{
+    &10{
+        line-height: $line-height-10;
+    }
+    &12{
+        line-height: $line-height-12;
+    }
+    &14{
+        line-height: $line-height-14;
+    }
+    &16{
+        line-height: $line-height-16;
+    }
+    &18{
+        line-height: $line-height-18;
+    }
+    &20{
+        line-height: $line-height-20;
+    }
+    &24{
+        line-height: $line-height-24;
+    }
+    &26{
+        line-height: $line-height-26;
+    }
+    &30{
+        line-height: $line-height-30;
+    }
+    &32{
+        line-height: $line-height-32;
+    }
+    &48{
+        line-height: $line-height-48;
+    }
+    &56{
+        line-height: $line-height-56;
+    }
+}
+
+// Font imports
+
+//roboto
+@font-face {
+	font-family: $font-name;
+	font-family: "Roboto-Thin";
+	font-weight: 100
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Light.ttf");
+	font-weight: 300
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Regular.ttf");
+	font-weight: 400
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Italic.ttf");
+	font-weight: 400;
+	font-style: italic
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Medium.ttf");
+	font-weight: 500
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Bold.ttf");
+	font-weight: 700
+}
+
+@font-face {
+	font-family: $font-name;
+	src: url("https://www.cemexgo.com/cdn/design-framework/latest/fonts/Roboto-Black.ttf");
+	font-weight: 800
+}
+
+
+// Font weight classes
+.roboto-bold {
+    font-family: '#{ $font-name }';
+    font-weight: $font-bold;
+}
+.roboto-medium {
+    font-family: '#{ $font-name }';
+    font-weight: $font-medium;
+}
+.roboto-regular {
+    font-family: '#{ $font-name }';
+    font-weight: $font-regular;
+}
+.roboto-light {
+    font-family: '#{ $font-name }';
+    font-weight: $font-light;
+}
+.roboto-thin {
+    font-family: '#{ $font-name }';
+    font-weight: $font-thin;
+}
+.roboto-italic {
+    font-family: '#{ $font-name }';
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}
+.font-medium {
+    font-weight: $font-medium;
+}
+.font-regular {
+    font-weight: $font-regular;
+}
+.font-light {
+    font-weight: $font-light;
+}
+.font-thin {
+    font-weight: $font-thin;
+}
+.font-italic {
+    font-style: italic;
+}
+
+
+// Headings, elements with role of headings
+h1, .h1-role {
+	font-family: 	$font-family;
+	font-size: 	 	$font-size-30;
+	line-height: 	$line-height-30;
+	font-weight: 	$font-bold;
+	color: 		 	$deep-blue;
+}
+
+h2, .h2-role {
+	font-family: 	$font-family;
+	font-size:   	$font-size-24;
+	line-height: 	$line-height-24;
+	font-weight: 	$font-medium;
+	color:       	$deep-blue;
+}
+
+h3, .h3-role {
+	font-family: 	$font-family;
+	font-size:   	$font-size-18;
+	line-height: 	$line-height-18;
+	font-weight: 	$font-regular;
+	color:       	$deep-blue;
+}
+
+h4, .h4-role {
+	font-family: 	$font-family;
+	font-size:   	$font-size-16;
+	line-height: 	$line-height-16;
+	font-weight: 	$font-medium;
+	color:       	$deep-blue;
+}
+
+h5, .h5-role {
+	font-family: 	$font-family;
+	font-size:   	$font-size-14;
+	line-height: 	$line-height-16;
+	font-weight: 	$font-medium;
+	color:       	$deep-blue;
+	text-transform: uppercase;
+}
+
+h6, .h6-role {
+	font-family: 	$font-family;
+	font-size:   	$font-size-12;
+	line-height: 	$line-height-16;
+	font-weight: 	$font-medium;
+	color:       	$deep-blue;
+}
+
+// Table entries styles
+.table-entry {
+	font-family: 	$font-family;
+	font-size: 		$font-size-14;
+	line-height: 	$line-height-16;
+	color: 			$dark-grey;
+}
+
+.table-entry-strong {
+	font-family: 	$font-family;
+	font-size: 		$font-size-14;
+	line-height: 	$line-height-16;
+	color: 			$dark-grey;
+	font-weight: 	$font-bold;
+}
+
+.cmx-breadcrumb {
+	font-family:    $font-family;
+	font-size:      $font-size-18;
+	color: 			$deep-blue;
+}
+
+// Links style
+a {
+	text-decoration: 		none;
+	color: 					$bright-blue;
+	&:hover {
+		text-decoration: 	underline;
+		color: 				$bright-blue;
+	}
+	&:active {
+		text-decoration: 	underline;
+		color: 				$true-blue;
+	}
+	&.disabled {
+		text-decoration: 	none;
+		color: 				$medium-grey;
+		cursor: 			not-allowed;
+	}
+
+	&.table-entry {
+		font-size: $font-size-14;
+		color: $bright-blue;
+	}
+}
+
+.link {
+	text-decoration: 		none;
+	color: 					$bright-blue;
+	&:hover {
+		text-decoration: 	underline;
+		color: 				$bright-blue;
+	}
+	&:active {
+		text-decoration: 	underline;
+		color: 				$true-blue;
+	}
+	&.disabled {
+		text-decoration: 	none;
+		color: 				$medium-grey;
+		cursor: 			not-allowed;
+	}
+}
+
+.table-entry {
+	font-size: $font-size-14;
+	color: $dark-grey;
+}
+
+
+// Input and placeholders style
+.input-placeholder {
+	font-family: 	$font-family;
+	font-size: 		$font-size-14;
+	line-height: 	$line-height-16;
+	color: 			$medium-grey;
+}
+
+.input-text {
+	font-family: 	$font-family;
+	font-size: 		$font-size-14;
+	line-height: 	$line-height-16;
+	color: 			$dark-grey;
+}
+
+// Prices style
+.size-14 {
+	font-size: 		$font-size-14;
+}
+
+.size-48 {
+	font-size: 		$font-size-48;
+}
+
+.text-overflow{
+    &-ellipsis{
+        text-overflow: ellipsis;
+    }
+}
+
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.white-space{
+    &--pre {
+        white-space: pre-wrap !important;
+    }
+    &--normal{
+        white-space: normal !important;
+    }
+    &--nowrap{
+        white-space: nowrap !important;
+    }
+}
+
+.text{
+    &-end{
+        text-align: right !important;
+    }
+    &-start{
+        text-align: left !important;
+    }
+}
+[dir='rtl']{
+    .text{
+        &-end{
+            text-align: left !important;
+        }
+        &-start{
+            text-align: right !important;
+        }
+    }
+}

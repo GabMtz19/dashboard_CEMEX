@@ -1,0 +1,86 @@
+// Colors
+
+
+// Primary
+
+$true-white: 				#FFF;
+$true-black: 				#000;
+$true-blue: 				#003876;
+$medium-blue: 				#002A59;
+$medium-grey: 				#666;
+$dark-grey: 				#333;
+$background-grey: 			#F4F6F9;
+$input-border-grey:         #ADAEBB;
+
+
+// Highlight and status
+$true-red: 					#EE3D42;
+$true-red-light:			#ef9a9a;
+$true-red-dark:				#b71c1c;
+
+$bright-orange: 			#FBB03B;
+$bright-orange-light:		#ffcc80;
+$bright-orange-dark:		#ff8f00;
+
+$bright-green: 				#7AC943;
+$bright-green-light:		#c5e1a5;
+$bright-green-dark:			#1b5e20;
+
+$bright-blue: 				#3FA9F5;
+$bright-blue-light:			#81d4fa;
+$bright-blue-dark:			#01579B;
+
+$deep-blue: 				#001B3A;
+
+$table-highlight-grey: 		#E8EBEF;
+
+$table-row-active:			#CCE4F8;
+
+$disabled-grey: 			#D6D6D6;
+
+$light-grey:        #e4e4e4;
+
+
+// Hovers and active
+$active-blue: 				#2684C7;
+$active-green:		 		#66B330;
+
+
+
+// Create grayscale
+$gray-dark:                 #292b2c !default;
+$gray:                      #464a4c !default;
+$gray-light:                #636c72 !default;
+$gray-lightish:             #B0B0B0 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+// Colors with opacity
+$true-white-ten-percent:	rgba(255, 255, 255, 0.1);
+$true-white-eighty-percent:	rgba(255, 255, 255, 0.8);
+
+$true-red-five-percent:		rgba(238, 61, 66, 0.05);
+
+$bright-green-five-percent:		rgba(122, 201, 67,0.05);
+
+$bright-orange-five-percent:		rgba(251, 176, 59, 0.05);
+
+$true-blue-five-percent:	rgba(0,42,89,0.05);
+
+$bright-blue-forty-percent:	rgba(63,169,245,0.40);
+$bright-blue-twenty-percent:rgba(63,169,245,.2);
+
+$true-black-zero-percent:	rgba(0, 0, 0, 0);
+$true-black-five-percent:		rgba(0,0,0, 0.05);
+$true-black-ten-percent:	rgba(0,0,0,0.1);
+$true-black-fifteen-percent:	rgba(0,0,0,0.15);
+$true-black-twenty-percent:	rgba(0,0,0,0.20);
+$true-black-twentyfive-percent:	rgba(0,0,0,0.25);
+$true-black-forty-five-percent:	rgba(0, 0, 0, 0.45);
+$true-black-fifty-percent:	rgba(0,0,0,0.5);
+$true-black-sixty-percent:	rgba(0,0,0,0.5);
+$true-black-eighty-percent:	rgba(0,0,0,0.8);
+
+$gray-fifty-percent:		rgba(70, 74, 76, 0.5);
+
+$deep-blue-eighty-percent:	rgba(0, 27, 58, 0.8);
